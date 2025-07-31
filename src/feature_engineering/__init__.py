@@ -1,0 +1,1 @@
+"""Feature engineering module for RetailGenius churn prediction project.""" 

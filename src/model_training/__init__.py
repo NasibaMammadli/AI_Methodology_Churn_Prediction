@@ -1,0 +1,1 @@
+"""Model training module for RetailGenius churn prediction project.""" 

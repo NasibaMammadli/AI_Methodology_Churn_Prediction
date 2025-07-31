@@ -1,0 +1,44 @@
+RetailGenius Churn Prediction - SHAP Analysis Report
+============================================================
+
+Model Information:
+Model type: RandomForestClassifier
+Number of features: 15
+Number of samples: 10000
+
+Feature Importance (Mean Absolute SHAP Values):
+--------------------------------------------------
+ 1. monthly_charges                0.0599
+ 2. contract_payment_interaction_encoded 0.0477
+ 3. contract_risk                  0.0469
+ 4. tenure                         0.0425
+ 5. contract_type_encoded          0.0350
+ 6. charge_per_service             0.0268
+ 7. tenure_risk                    0.0257
+ 8. tenure_monthly_interaction     0.0178
+ 9. overall_risk_score             0.0170
+10. payment_risk                   0.0144
+11. avg_monthly_charge             0.0116
+12. high_value_customer            0.0096
+13. streaming_movies_encoded       0.0043
+14. payment_method_encoded         0.0039
+15. senior_citizen                 0.0024
+
+============================================================
+Sample Prediction Explanation:
+----------------------------------------
+Sample Index: 0
+Base Value: 0.1422
+Predicted Probability: 0.0050
+
+Top 10 Feature Contributions:
+  contract_payment_interaction_encoded  -0.0530 (value: 1.5861046145478963)
+  contract_risk              -0.0492 (value: -1.221351280789858)
+  monthly_charges             0.0441 (value: 1.1663782315355635)
+  contract_type_encoded      -0.0359 (value: 1.221351280789858)
+  tenure                     -0.0243 (value: 0.744849041092901)
+  charge_per_service          0.0194 (value: 0.8623444402338843)
+  tenure_risk                -0.0115 (value: -0.6109342456169171)
+  overall_risk_score         -0.0094 (value: -0.1907148437611346)
+  tenure_monthly_interaction  -0.0088 (value: 1.470574557375986)
+  high_value_customer         0.0086 (value: 1.7320508075688774)

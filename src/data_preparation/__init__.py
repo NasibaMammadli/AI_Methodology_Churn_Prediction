@@ -1,0 +1,1 @@
+"""Data preparation module for RetailGenius churn prediction project.""" 
